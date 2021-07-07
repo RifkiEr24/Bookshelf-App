@@ -28,21 +28,27 @@
 }
 
 /* SIZING */
+.book-icon{
+    font-size: 80pt;
+}
 input, a, button{
  
     padding: 10px;
 }
 /* ALIGNMENT */
-.center{
+.text-center{
     text-align: center;
 }
-/* FORM */
-.submit{
-    border: 0;
-    padding: 10px 80px;
+.item-center{
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+/* FORM */
+
+.submit{
+    border: 0;
+    padding: 10px 40px;
     margin-top: 15px;
 }
 label{
@@ -54,9 +60,39 @@ label{
     flex-direction: column;
     margin: 30px 0;
 }
+.search-input{
+    border: 0;
+    background-color: #D0CDCD;
+    width: 75%;
+}
 /* HELPER */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+   
+}
+.box.primary-color{
+    filter: drop-shadow(0 0 1rem #2B2E4A);;
+}
+.box.secondary-color{
+    filter: drop-shadow(0 0 1rem #E84545);;
+}
+.mt-sm{
+    margin-top: 20px;
+}
+.mt-md{
+    margin-top: 40px;
+}
 .b-rad-rounded{
     border-radius: 10px;
+}
+.b-rad-rounded-md{
+    border-radius: 35px;
 }
 main{
     display: flex;
@@ -66,9 +102,7 @@ aside,div.content{
     width: 100%;
     padding: 25px;
 }
-aside{
-    height: 100vh;
-}
+
 .add-book{
     margin-top: 40px;
 }
@@ -79,4 +113,18 @@ aside{
     div.content{
         width: 75%;
     }
+    .box{
+        width: calc(100%/2);
+
+    }
+    .container{
+        flex-wrap: nowrap;
+    }
+  }
+  @media only screen and (min-width: 1140px) {
+    .box{
+        width: calc(100%/3);
+
+    }
+
   }

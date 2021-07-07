@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Bookshelf App</title>
 </head>
 
@@ -13,9 +14,9 @@
 
     <main>
         <aside class="primary-color text-white">
-            <h1 class="bold header center"> Bookshelf App</h1>
+            <h1 class="bold header text-center"> Bookshelf App</h1>
             <div class="add-book">
-                <p class="header center">Add Book</p>
+                <p class="header text-center">Add Book</p>
                 <form action="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -33,12 +34,65 @@
                         <label for="done-read">Selesai Dibaca</label>
                         <input type="checkbox" name="done-read">
                     </div>
-                    <input class="secondary-color text-white bold submit b-rad-rounded" type="submit" value="Submit">
+                    <input class="secondary-color text-white bold submit b-rad-rounded item-center" type="submit" value="Submit">
                 </form>
             </div>
         </aside>
         <div class="content ">
-            b
+            <p class="header">Search Book</p>
+            <form action="POST" class="search-form">
+                <input type="text" class="search-input b-rad-rounded" name="search">
+                <input type="submit" class=" primary-color text-white bold submit b-rad-rounded" value="Search">
+            </form>
+            <p class="header mt-md">Belum Selesai Dibaca</p>
+            <div class="container mt-sm">
+                <div class="box primary-color b-rad-rounded-md text-white">
+                    <p class="text-center bold mt-sm">Dilan 1990</p>
+                    <span class="iconify book-icon item-center mt-sm" data-icon="bi:book" data-inline="false"></span> 
+                    <p class="mt-sm text-center">Pidi Baiq</p>
+                    <p class="text-center bold">2015</p>  
+                    <button class="secondary-color text-white submit bold b-rad-rounded item-center">Selesai Dibaca</button>         
+                </div>
+                <div class="box primary-color b-rad-rounded-md text-white">
+                    <p class="text-center bold mt-sm">Dilan 1990</p>
+                    <span class="iconify book-icon item-center mt-sm" data-icon="bi:book" data-inline="false"></span> 
+                    <p class="mt-sm text-center">Pidi Baiq</p>
+                    <p class="text-center bold">2015</p>  
+                    <button class="secondary-color text-white submit bold b-rad-rounded item-center">Selesai Dibaca</button>         
+                </div>
+                <div class="box primary-color b-rad-rounded-md text-white">
+                    <p class="text-center bold mt-sm">Dilan 1990</p>
+                    <span class="iconify book-icon item-center mt-sm" data-icon="bi:book" data-inline="false"></span> 
+                    <p class="mt-sm text-center">Pidi Baiq</p>
+                    <p class="text-center bold">2015</p>  
+                    <button class="secondary-color text-white submit bold b-rad-rounded item-center">Selesai Dibaca</button>         
+                </div>
+
+            </div>
+            <p class="header mt-md">Selesai Dibaca</p>
+            <div class="container mt-sm">
+                <div class="box secondary-color b-rad-rounded-md text-white">
+                    <p class="text-center bold mt-sm">Dilan 1990</p>
+                    <span class="iconify book-icon item-center mt-sm" data-icon="bi:book" data-inline="false"></span> 
+                    <p class="mt-sm text-center">Pidi Baiq</p>
+                    <p class="text-center bold">2015</p>  
+                    <button class="primary-color text-white submit bold b-rad-rounded item-center">Selesai Dibaca</button>         
+                </div>
+                <div class="box secondary-color b-rad-rounded-md text-white">
+                    <p class="text-center bold mt-sm">Dilan 1990</p>
+                    <span class="iconify book-icon item-center mt-sm" data-icon="bi:book" data-inline="false"></span> 
+                    <p class="mt-sm text-center">Pidi Baiq</p>
+                    <p class="text-center bold">2015</p>  
+                    <button class="primary-color text-white submit bold b-rad-rounded item-center">Selesai Dibaca</button>         
+                </div>
+                <div class="box secondary-color b-rad-rounded-md text-white">
+                    <p class="text-center bold mt-sm">Dilan 1990</p>
+                    <span class="iconify book-icon item-center mt-sm" data-icon="bi:book" data-inline="false"></span> 
+                    <p class="mt-sm text-center">Pidi Baiq</p>
+                    <p class="text-center bold">2015</p>  
+                    <button class="primary-color text-white submit bold b-rad-rounded item-center">Selesai Dibaca</button>         
+                </div>
+            </div>
         </div>
     </main>
 </body>
