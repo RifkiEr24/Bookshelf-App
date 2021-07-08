@@ -17,22 +17,22 @@
             <h1 class="bold header text-center"> Bookshelf App</h1>
             <div class="add-book">
                 <p class="header text-center">Add Book</p>
-                <form action="POST">
+                <form id="addbuku">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" name="name" class="b-rad-rounded">
+                        <input type="text" id="bookname" name="name" class="b-rad-rounded">
                     </div>
                     <div class="form-group">
                         <label for="writer">Penulis</label>
-                        <input type="text" name="write" class="b-rad-rounded">
+                        <input type="text" id="writer" name="write" class="b-rad-rounded">
                     </div>
                     <div class="form-group">
                         <label for="years">Tahun</label>
-                        <input type="number" name="years" class="b-rad-rounded">
+                        <input type="number" id="years" name="years" class="b-rad-rounded">
                     </div>
                     <div>
                         <label for="done-read">Selesai Dibaca</label>
-                        <input type="checkbox" name="done-read">
+                        <input type="checkbox" id="doneread" name="done-read">
                     </div>
                     <input class="secondary-color text-white bold submit b-rad-rounded item-center" type="submit" value="Submit">
                 </form>
@@ -45,12 +45,12 @@
                 <input type="submit" class=" primary-color text-white bold submit b-rad-rounded" value="Search">
             </form>
             <p class="header mt-md">Belum Selesai Dibaca</p>
-            <div class="container mt-sm">
-                <div class="box primary-color b-rad-rounded-md text-white">
-                    <p class="text-center bold mt-sm">Dilan 1990</p>
+            <div class="container mt-sm" id="contentNotReaded">
+                <div class="box primary-color b-rad-rounded-md text-white text-center">
+                    <p class=" bold mt-sm">Dilan 1990</p>
                     <span class="iconify book-icon item-center mt-sm" data-icon="bi:book" data-inline="false"></span> 
-                    <p class="mt-sm text-center">Pidi Baiq</p>
-                    <p class="text-center bold">2015</p>  
+                    <p class="mt-sm ">Pidi Baiq</p>
+                    <p class=" bold">2015</p>  
                     <button class="secondary-color text-white submit bold b-rad-rounded item-center">Selesai Dibaca</button>         
                 </div>
                 <div class="box primary-color b-rad-rounded-md text-white">
@@ -95,6 +95,7 @@
             </div>
         </div>
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>

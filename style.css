@@ -69,12 +69,13 @@ label{
 .container{
     display: flex;
     flex-wrap: wrap;
+
 }
 .box{
     width: 100%;
     padding: 15px;
-    margin: 15px;
-   
+    margin: 12px 0 0 12px;
+
 }
 .box.primary-color{
     filter: drop-shadow(0 0 1rem #2B2E4A);;
@@ -114,16 +115,13 @@ aside,div.content{
         width: 75%;
     }
     .box{
-        width: calc(100%/2);
+        width: calc((100% /2) - 12px)
 
-    }
-    .container{
-        flex-wrap: nowrap;
     }
   }
   @media only screen and (min-width: 1140px) {
     .box{
-        width: calc(100%/3);
+        width:  calc((100% /3) - 12px);
 
     }
 
